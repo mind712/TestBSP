@@ -13,7 +13,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
  */
 public class App 
 {
-    public static void main( String[] args ) throws Exception
+    public static void main( String[] args )
     {
     	//Browser initialization
     			System.setProperty("webdriver.chrome.driver", ".\\src\\driver\\chromedriver.exe");
@@ -27,6 +27,7 @@ public class App
     	 //open App
     			driver.get("https://github.com/");
     			System.out.println(driver.getTitle());
+    			System.out.println("SUCCESS");
     			
     	//Close Browser       
     			driver.quit();
